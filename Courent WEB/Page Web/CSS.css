@@ -11,7 +11,7 @@ body
 {
     overflow-x: hidden;
     min-height: 100vh;
-    background: linear-gradient(#2f2f2f,#aaaaaa);
+    background: linear-gradient(#170410,#21001c);
 }
 
 body section
@@ -35,7 +35,7 @@ header
 
 header .LOGO
 {
-color: #fff;
+color: #f1f1f1;
 font-weight: 700;
 text-decoration: none;
 font-size: 2em;
@@ -60,22 +60,61 @@ header ul li a
 {
     text-decoration: none;
     padding: 6px 15px;
-    color: #fff;
+    color: #f1f1f1;
     border-radius: 20px;
 }
 
 header ul li a:hover,
 header ul li a.active
 {
-    background-color: #fff;
-    color: #2f2f2f;
+    background-color: #f1f1f1;
+    color: #170410;
+}
+
+.IMG_TROU_NOIR
+{
+    position: relative;
+    padding: 100px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.IMG_TROU_NOIR:before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to #f1f1f1 top, #1c0522, transparant);
+    z-index: 10000;
+}
+
+.IMG_TROU_NOIR img
+{
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+section
+{
+    z-index: 10;
 }
 
 .BANDEAU_IMAGE_TXT
 {
     max-width: 100vw;
     max-height: 70vh;
-    background-color: #fff;
+    background-color: #f1f1f1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,6 +170,7 @@ header ul li a.active
 {
     height: 20vh;
     width: 100vw;
+    background-color: #f1f1f1;
 }
 
 
@@ -139,5 +179,5 @@ header ul li a.active
 footer
 {
     height: 25vh;
-    background-color: #2f2f2f;
+    background-color: #170410;
 }

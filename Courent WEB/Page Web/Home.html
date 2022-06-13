@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="CSS.css">
     </head>
     <header>
-        <a href="HOMER.html" class="LOGO">Logo</a>
+        <a href="HOME.html" class="LOGO">Logo</a>
         <nav>
             <ul typeof="">
-            <li><a href="HOMER.html" class="active">Home</a></li>
+            <li><a href="HOME.html" class="active">Home</a></li>
             <li><a href="Product.html">Product</a></li>
             <li><a href="About Us.html">About Us</a></li>
             <li><a href="Contact.html">Contact</a></li>
@@ -22,11 +22,12 @@
     <body>
        <section>
         <div>
-            <div>
-                <img src="https://github.com/th0my67/WEBSITE/blob/Thomas/Courent WEB/Autres/TROU NOIR STYLE/Background.png" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="IMG_TROU_NOIR">
+                <img src="https://github.com/th0my67/WEBSITE/blob/4df51615dd5ea8efc6551e0133c4e8a09062d734/Courent%20WEB/Autres/TROU%20NOIR%20STYLE/Background.png?raw=true" alt="Space_Background">
+                <img src="https://raw.githubusercontent.com/th0my67/WEBSITE/4df51615dd5ea8efc6551e0133c4e8a09062d734/Courent%20WEB/Autres/TROU%20NOIR%20STYLE/Etoiles.png" alt="ETOILES" id="STARS">
+                <img src="https://raw.githubusercontent.com/th0my67/WEBSITE/4df51615dd5ea8efc6551e0133c4e8a09062d734/Courent%20WEB/Autres/TROU%20NOIR%20STYLE/Flux.png" alt="TROU_NOIR_STYLEE" id="BLACKHOLE">
+                
+                <img src="https://github.com/th0my67/WEBSITE/blob/4df51615dd5ea8efc6551e0133c4e8a09062d734/Courent%20WEB/Autres/TROU%20NOIR%20STYLE/Particules.png?raw=true" alt="Particules_du_trou_noir" id="PARTICULES">
             </div>
         </div>
        </section> 
@@ -52,7 +53,20 @@
             </div>
        </section>
         
-        <script src="" async defer></script>
+        <script>
+            let BLACKHOLE = document.getElementById("BLACKHOLE")
+            let Particules = document.getElementById("PARTICULES")
+            let STARS = document.getElementById("STARS")
+
+
+
+            window.addEventListener("scroll", function(){
+            let value =window.scrollY;
+            STARS.style.top=value*0.05 + "vh";
+            Particules.style.top=value*0.15+"vh";
+            BLACKHOLE.style.top=value*0.10+"vh";
+             })
+        </script>
     </body>
     <footer></footer>
 

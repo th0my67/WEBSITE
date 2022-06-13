@@ -1,0 +1,117 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+   min-height: 100vh;
+   overflow-x: hidden;
+    background: linear-gradient(#2f2f2f,#aaaaaa);
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo
+{
+color: #fff;
+font-weight: 700;
+text-decoration: none;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li 
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background-color: #fff;
+    color: #2f2f2f;
+}
+
+section
+{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.BOX
+{
+    position: relative;
+    box-sizing: border-box; min-width: 100vw; min-height: 70vh;
+    background-color: #fff;
+}
+
+.TEXT_BOX
+{
+    position: relative; top: 5vh;
+    box-sizing: border-box; width: 60%; height: 60vh;
+    background-color: #fff;
+}
+
+.TEXT_BOX2
+{
+    position: relative; top: 5vh;
+    box-sizing: border-box; width: 60%; height: 60vh;
+    background-color: rgb(176, 176, 176);
+}
+
+.IMG_BOX
+{
+    position: relative; top: 5vh;
+    box-sizing: border-box; width: 40%; height: 60vh;
+    background-color: #fff;
+}
+
+.TXT
+{
+    position: relative; top: 9vh; margin-left: 5vw;
+    padding: 20px;
+    margin-right: 5vw;
+    font-family:'Times New Roman', Times, serif
+}
+#IMG_IN_INGBOX
+{
+    height: 100%;
+}
+
+footer
+{
+    background-color: #2f2f2f;
+    height: 20vh;
+}

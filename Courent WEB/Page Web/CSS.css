@@ -114,3 +114,44 @@ footer
     background-color: #2f2f2f;
     height: 20vh;
 }
+
+.TABLEAU{
+
+}
+
+.IMG_TABLEAU{
+    max-width: 100%;
+    max-height: 50vh;
+    position: relative; top: 0px;
+}
+
+.TEXTE_TABLEAU{
+    font-size: medium;
+    padding: 5vh;
+    box-sizing: border-box; width: 20vw;
+    max-height: 5vh;
+}
+
+.CELLULE{
+    max-width: 20vw;
+    margin: 10vh;
+    max-height: 40vh;
+}
+
+.EMPLOYES{
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vh;
+    margin-top: 10vh;
+    color: #fff;
+}
+
+.CENTER{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

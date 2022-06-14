@@ -173,8 +173,50 @@ section
     background-color: #f1f1f1;
 }
 
+.container1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
 
+.image{
+    height: 25em;
+    margin: auto;
+}
 
+.text{
+    color: white;
+    margin-top: auto;
+}
+
+.cellule{
+    max-width: 10vw;
+    margin: auto 10vw auto 10vw;
+}
+
+.container2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#chefs{
+    color: white;
+    margin-left: 45%;
+    margin-top: 10vh;
+    font-size: 30px;
+    margin-right: 45%;
+}
+
+#equipe{
+    color: white;
+    margin-left: 45%;
+    margin-top: 10vh;
+    font-size: 30px;
+    margin-right: 41%;
+}
 
 footer
 {

@@ -178,11 +178,21 @@ section
     display: flex;
     justify-content: center;
     margin-top: 10vh;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
+
+
 
 .image{
     height: 25em;
     margin: auto;
+}
+
+.center {
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .text{

@@ -228,6 +228,54 @@ section
     margin-right: 41%;
 }
 
+#sous-titre{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22vh;
+}
+
+#reseaux{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#sous-titre2{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#horaires{
+    color: white;
+    width: 100%;
+    margin-top: 5vh;
+    margin-left: 45vw;
+}
+
+#horaires2{
+    color: white;
+    width: 100%;
+    margin-top: 2vh;
+    margin-left: 45vw;
+}
+
+#image_contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#img_contact{
+    width: 90vh;
+}
+
 footer
 {
     height: 25vh;

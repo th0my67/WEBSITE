@@ -178,6 +178,10 @@ section
     width: 15vw;
     
 }
+#Navette_SPACIALE{
+   transform: scaleX(-1.5) scaley(1.5)translatex(-2vw) translatey(-1.3vh) rotate(26deg);
+}
+
 .middle_txt{
     max-width: 100%;
     max-height: 100%;
@@ -185,6 +189,7 @@ section
     align-items: center;
     justify-content: center;
     width: 3em;
+    color: #f1f1f1;
 }
 .navette img{
     transform: translate(-50%) rotate(45deg);
@@ -196,13 +201,13 @@ section
         transform:matrix(1,0,0,1,0,0);
     }
     25%{
-       transform:matrix(1,0.3,-0.3,1,0,0);
+       transform:matrix(1,0.1,-0.1,1,0,0);
     }
     50%{
         transform:matrix(1,0,0,1,0,0);
     }
     75%{
-        transform:matrix(1,-0.3,0.3,1,0,0);
+        transform:matrix(1,-0.1,0.1,1,0,0);
     }
     100%{
         transform:matrix(1,0,0,1,0,0);

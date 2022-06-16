@@ -27,11 +27,15 @@
                 <img src="https://raw.githubusercontent.com/th0my67/WEBSITE/4df51615dd5ea8efc6551e0133c4e8a09062d734/Courent%20WEB/Autres/TROU%20NOIR%20STYLE/Etoiles.png" alt="ETOILES" id="STARS">
                 <img src="https://raw.githubusercontent.com/th0my67/WEBSITE/4df51615dd5ea8efc6551e0133c4e8a09062d734/Courent%20WEB/Autres/TROU%20NOIR%20STYLE/Flux.png" alt="TROU_NOIR_STYLEE" id="BLACKHOLE">
                 <img src="https://github.com/th0my67/WEBSITE/blob/4df51615dd5ea8efc6551e0133c4e8a09062d734/Courent%20WEB/Autres/TROU%20NOIR%20STYLE/Particules.png?raw=true" alt="Particules_du_trou_noir" id="PARTICULES">
-                <div onmouseover="document.getElementById('divANIME').style='animation:holding 4s infinite linear'" class="navette" id="divANIME" onmouseleave="document.getElementById('divANIME').style='animation:holding 0s'">
-                    <a href="#arriveeeee"><img src="https://github.com/th0my67/WEBSITE/blob/Thomas/Courent WEB/Autres/TROU NOIR STYLE/Navette.png" alt=""></a>
-                    <h2 class="middle_txt">Explore</h2>
+
+                <div onmouseover="document.getElementById('divANIME').style='animation:holding 14s infinite linear'" class="navette" id="divANIME">
+                    <a href="#arriveeeee"><img src="https://github.com/th0my67/WEBSITE/blob/318bf72a8a79473fe03d73aacd7e8149e7f7a0f3/Courent%20WEB/Autres/TROU%20NOIR%20STYLE/Navette.png?raw=true" alt="" id="Navette_SPACIALE">
+                    <h2 class="middle_txt">Explore</h2></a>
+
+                    <!--Pour si on veut que l'animation s'active quand on met la souris dessus : onmouseover="document.getElementById('divANIME').style='animation:holding 14s infinite linear'"-->
+
+                    <!-- Pour si jamais on veut arrêter l'animation quand on enlève la souris de la navette : onmouseleave="document.getElementById('divANIME').style='animation:holding 0s'" -->
                 </div>
-                    
             </div>
         </div>
        </section> 
@@ -61,7 +65,7 @@
             let BLACKHOLE = document.getElementById("BLACKHOLE")
             let Particules = document.getElementById("PARTICULES")
             let STARS = document.getElementById("STARS")
-
+            let NAVETTE = document.getElementById("divANIME")
 
 
             window.addEventListener("scroll", function(){
@@ -69,6 +73,7 @@
             STARS.style.top=value*0.05 + "vh";
             Particules.style.top=value*0.15+"vh";
             BLACKHOLE.style.top=value*0.10+"vh";
+            NAVETTE.style.top= 42.5 - value*0+"vh"
              })
         </script>
     </body>

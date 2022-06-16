@@ -333,6 +333,20 @@ section
     width: 90vh;
 }
 
+#questions{
+    color: white;
+    width: 100%;
+    margin-top: 5vh;
+    margin-left: 32vw;
+}
+
+#adresses{
+    color: white;
+    width: 100%;
+    margin-top: 2vh;
+    margin-left: 45vw;
+}
+
 footer
 {
     display: flex;

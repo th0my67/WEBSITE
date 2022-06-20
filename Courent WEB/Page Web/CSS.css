@@ -140,7 +140,7 @@ section
     flex: 1;
     max-height: 2em;
     flex-basis: 50vw;
-    padding: 1em 0em;
+    padding: 2em 0em;
 }
 
 .BANDEAU_TXT_BOX p
@@ -176,6 +176,7 @@ section
     left: 42.5vw;
     height: 15vh;
     width: 15vw;
+    animation: pesanteur 14s infinite linear;
     
 }
 #Navette_SPACIALE{
@@ -196,7 +197,7 @@ section
 }
 
 
-@keyframes holding{
+@keyframes pesanteur{
     0%{
         transform:matrix(1,0,0,1,0,0);
     }
@@ -211,6 +212,24 @@ section
     }
     100%{
         transform:matrix(1,0,0,1,0,0);
+    }
+}
+
+@keyframes holding{
+    0%{
+        transform:matrix(1.03,0,0,1.03,0,0);
+    }
+    25%{
+       transform:matrix(1.03,0.2,-0.2,1.03,0,0);
+    }
+    50%{
+        transform:matrix(1.03,0,0,1.03,0,0);
+    }
+    75%{
+        transform:matrix(1.03,-0.2,0.2,1.03,0,0);
+    }
+    100%{
+        transform:matrix(1.03,0,0,1.03,0,0);
     }
 }
 
@@ -340,17 +359,17 @@ section
 .img_du_produit img{
     max-width: 40vw;
     max-height: 60vh;
-    position: absolute;
-    top: 25vh;
-
+    position: relative;
+    z-index: 1;
 }
 
 .img_du_produit img#Gravity{
     opacity: 0.2;
-    top: 23vh;
+    top: 20vh;
     animation: rotation 3s infinite linear;
     max-width: 28vw;
-    
+    position: absolute;
+    z-index: -1;
 }
 @keyframes rotation {
     0%{
@@ -382,6 +401,9 @@ section
     color: #f1f1f1;
     box-sizing: border-box;
 }
+.paragraphe1{
+    margin-bottom: 2vh;
+}
 
 .Description_produit_texte div{
     position:relative;
@@ -402,13 +424,14 @@ section
 }
 
 .Third_Slide{
-    background-color:gray ;
+    background-color:lightslategrey ;
     height: 100vh;
     width: 100vw;
 }
 
-.third_slide_img{
-    order:2
+.img_trouNoir_thirdSlide img{
+    max-height: 60vh;
+    max-width: 60vw;
 }
 
 

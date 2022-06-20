@@ -460,7 +460,7 @@ section
 footer
 {
     display: flex;
-    height: 25vh;
+    height: 15vh;
     background-color: #170410;
     flex-direction:row;
     justify-content: space-around;

@@ -1,14 +1,17 @@
 const intro = document.querySelector(".First_Slide");
-const Text1 = document.querySelectorAll(".paragraphe1")
-const Text2 = document.querySelector(".paragraphe2")
+const Text1 = document.querySelectorAll(".paragraphe1");
+const Text2 = document.querySelector(".paragraphe2");
+const slide2 = document.querySelector(".Second_Slide");
+const ThirdSlide = document.querySelector("Third_Slide");
 //END SECTION
 
 //SCROLLMAGIC
 const controller = new ScrollMagic.Controller();
-
+const controller2 = new ScrollMagic.Controller();
+const controllerThird = new ScrollMagic.Controller();
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 4000,
+  duration: 500,
   triggerElement: intro,
   triggerHook: 0
 })
@@ -16,29 +19,18 @@ let scene = new ScrollMagic.Scene({
   .setPin(intro)
   .addTo(controller);
 
-//Text Animation
-const Text1Anim = TweenMax.fromTo(Text1, 3, { opacity: 1 }, { opacity: 0 });
 
-let scene2 = new ScrollMagic.Scene({
-  duration: 1000,
-  triggerElement: intro,
+
+//Scene 2
+let scene_SLIDE2 = new ScrollMagic.Scene({
+  duration: 600,
+  triggerElement: slide2,
   triggerHook: 0
 })
-
-  .setTween(Text1Anim)
-  .addTo(controller);
-
-  //Text Animation
-const Text2Anim = TweenMax.fromTo(Text2, 3, { opacity: 1 }, { opacity: 0 });
+  .setPin(slide2)
+  .addTo(controller2);
 
 
-let scene3 = new ScrollMagic.Scene({
-  duration: 1000,
-  triggerElement: intro,
-  triggerHook: 0
-})
-  .addIndicators()
-  .setTween(Text2Anim)
-  .addTo(controller);
 
 
+  

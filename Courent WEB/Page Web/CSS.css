@@ -272,6 +272,22 @@ section
     
 }
 
+#investisseur{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#elon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
 .miniTitreEQUIPE{
     color: white;
     display: flex;
@@ -438,6 +454,7 @@ section
     justify-content: center;
     align-items: center;
     margin-top: 2vh;
+    margin-bottom: 5vh;
 }
 
 footer
